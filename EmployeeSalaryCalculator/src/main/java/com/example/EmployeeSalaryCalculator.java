@@ -62,7 +62,8 @@ public class EmployeeSalaryCalculator
 
 					//YOUR CODE ENDS HERE
 					//over 40 hours is 2x hourly rate
-					grossSalary = (hourlyRate*2)*hoursWorked;
+					int exceededHours = HW-standardWorkingHours;
+					grossSalary = (exceededHours * (hourlyRate*2)) + 40*hoursWorked;
 
 				}
 				else
