@@ -59,16 +59,17 @@ public class EmployeeSalaryCalculator
 				if(HW <= standardWorkingHours)
 				{
 					//YOUR CODE STARTS HERE
-					 
 
 					//YOUR CODE ENDS HERE
+					//over 40 hours is 2x hourly rate
+					grossSalary = (hourlyRate*2)*hoursWorked;
+
 				}
 				else
 				{
 					//YOUR CODE STARTS HERE
- 
-
 					//YOUR CODE ENDS HERE
+					grossSalary = hourlyRate*hoursWorked;
 				}
 				return grossSalary;
 	}
